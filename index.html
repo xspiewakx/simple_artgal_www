@@ -1,0 +1,56 @@
+﻿<html lang="pl">
+    <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>Fullscreen Background Image Slideshow with CSS3</title>
+        
+		<!-- META-TAGI -->
+        <meta name="author" content="Emil '@uspiewaka' Stefaniuk" />
+        
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	</head>
+	<body>
+		<!-- SLIDESHOW -->
+		<div class="fadein">
+			<div style="background-image:url('pages/abstrakcja/d_a00.jpg');"></div>
+			<div style="background-image:url('pages/abstrakcja/d_a01.jpg');"></div>
+			<div style="background-image:url('pages/abstrakcja/d_a02.jpg');"></div>
+			<div style="background-image:url('pages/abstrakcja/d_a03.jpg');"></div>
+			<div style="background-image:url('pages/abstrakcja/d_a04.jpg');"></div>
+			<div style="background-image:url('pages/abstrakcja/d_a05.jpg');"></div>
+			<div style="background-image:url('pages/abstrakcja/d_a06.jpg');"></div>
+			<div style="background-image:url('pages/abstrakcja/d_a07.jpg');"></div>
+			<div style="background-image:url('pages/abstrakcja/d_a08.jpg');"></div>
+			<div style="background-image:url('pages/abstrakcja/d_a09.jpg');"></div>
+			<div style="background-image:url('pages/abstrakcja/d_a10.jpg');"></div>
+			<div style="background-image:url('pages/abstrakcja/d_a11.jpg');"></div>
+			<div style="background-image:url('pages/abstrakcja/d_a12.jpg');"></div>
+			<div style="background-image:url('pages/abstrakcja/d_a13.jpg');"></div>
+			<div style="background-image:url('pages/abstrakcja/d_a14.jpg');"></div>
+		</div>
+		<div class="content">
+			<iframe src="pages/home.html" name="content_iframe" class="content_iframe" scrolling="yes"></iframe>
+		</div>
+		<!-- MENU -->
+		<div id="menu">
+			<div id="menu_cont">	
+				<p class="logo_txt">ARTYSTA KOMBINATOR<br>W BIAŁYMSTOKU</p>
+				<ul id="menu_cont2">
+					<li id="menu_txt"><a href="pages/home.html" target="content_iframe">STRONA GŁÓWNA</a></li>
+					<li id="menu_txt"><a href="pages/galeria.html" target="content_iframe">GALERIA</a></li>
+					<li id="menu_txt"><a href="pages/filmy.html" target="content_iframe">FILMY</a></li>
+					<li id="menu_txt"><a href="pages/maped.html" target="content_iframe">+BONUS: MAPOWANY OBRAZEK</a></li>
+					<li id="menu_txt"><a href="pages/kontakt.html" target="content_iframe">KONTAKT</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- SKRYPT SLIDESHOW -->
+		<script>
+			$(function(){
+				$('.fadein div:gt(0)').hide();
+				setInterval(function(){$('.fadein :first-child').fadeOut().next('div').fadeIn().end().appendTo('.fadein');}, 5000);
+			});
+		</script>
+	</body>
+</html>

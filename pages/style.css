@@ -1,0 +1,24 @@
+body {
+	background-color: rgba(255,255,255,0.7);
+	padding:10;
+	margin: 0;
+	font-family: breamcatcher;
+	font-size:24px;
+}
+
+.logo_txt { float: left; padding: 2px; font-size: 22px; font-family: breamcatcher; position: relative; top: -16px; line-height: 0.9em;}
+
+@font-face {
+    font-family: breamcatcher;
+		src: url('../fonts/breamcatcher.eot');
+		src: url('../fonts/breamcatcher.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/breamcatcher.woff') format('woff'),
+			url('../fonts/breamcatcher.ttf')  format('truetype'),
+			url('../fonts/breamcatcher.svg#svgFontName') format('svg');
+}
+.PUUUSH { height: 60px; }
+#image_scaled {
+	width:190px;
+	height: 190px;
+	margin: 10px;
+}
